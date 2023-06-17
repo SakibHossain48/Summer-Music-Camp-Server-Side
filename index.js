@@ -9,7 +9,7 @@ const stripe = require("stripe")(process.env.PAYMENT_SECRET);
 
 // Middleware
 app.use(cors());
-app.use(express.json());
+app.use(express.json());.
 
 //  Verify JWT Token
 const verifyJWT = (req, res, next) => {
