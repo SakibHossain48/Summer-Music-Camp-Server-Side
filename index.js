@@ -30,7 +30,7 @@ const verifyJWT = (req, res, next) => {
 		req.decoded = decoded;
 		next();
 	});
-};,
+};
 
 // MOngoDB Connection//
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.57whvd4.mongodb.net/?retryWrites=true&w=majority`;
