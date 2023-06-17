@@ -16,7 +16,7 @@ const verifyJWT = (req, res, next) => {
 	const authorization = req.headers.authorization;
 	if (!authorization) {
 		return res
-			.status(404)
+			.status(401)
 			.send({ error: true, message: "unauthorized access" });
 	}
 	// bearer token
